@@ -5,12 +5,12 @@
 
 ## Contact information:
 
-    * Locatioon: Moscow, Russia
-    * Phone: +79151745509
-    * Email:  kruckovaviktoria421@gmail.com
-    * Github: https://gist.github.com/Vikki100621
-    * Telegram: @Vikki100621
-    * Discord: Vikki#9074
+  * Locatioon: Moscow, Russia
+  * Phone: +79151745509
+  * Email:  kruckovaviktoria421@gmail.com
+  * Github: https://gist.github.com/Vikki100621
+  * Telegram: @Vikki100621
+  * Discord: Vikki#9074
 ***
 
 ## About me: 
@@ -26,8 +26,8 @@ My motto is practice makes perfect.
  * CSS basics
  * JavaScript basics
  * Git, GitHub
-* VS Code
-****
+ * VS Code
+***
 
 ## Code example: 
 ```
@@ -40,12 +40,12 @@ function testFactorial(a) {
     return x;
 }
 ```
-****
+***
 
 ## Education and courses: 
   * [Code Basics - JavaScript for Beginners](https://ru.code-basics.com/languages/javascript)
   * [Stepik - JavaScript for Beginners](https://stepik.org/course/2223/syllabus)
-****
+***
 
 ## Languages:
 * English: B1
