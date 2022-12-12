@@ -273,6 +273,7 @@ a:hover {
 .menu-marker {
    background-image: url(images/skills/галочка.svg);
 }
+
 /*-------Footer-------*/
 .footer-columns {
    display: flex;
