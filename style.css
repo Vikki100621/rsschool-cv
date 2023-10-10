@@ -285,21 +285,6 @@ a:hover {
   background-image: url('images/skills/галочка.svg');
 }
 
-/* -------End Main------------- */
-/* -------Footer------- */
-
-.footer-columns {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer-column img {
-  height: 80px;
-  width: 100px;
-}
 
 .cards-block {
   display: flex;
@@ -317,12 +302,14 @@ a:hover {
   border-radius: 10%;
   transition: transform 0.3s, box-shadow 0.3s;
 }
+
 .card:hover {
   box-shadow:
     0 0 10px 0 #eae7e4 inset,
     0 0 10px 4px #eae7e4;
     transform: scale(1.05);
 }
+
 .card.minesweeper {
   background-image: url('images/content/minesweeper.png');
 }
@@ -334,3 +321,20 @@ a:hover {
 .card.momentum {
   background-image: url('images/content/momentum.png');
 }
+
+/* -------End Main------------- */
+/* -------Footer------- */
+
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-column img {
+  height: 80px;
+  width: 100px;
+}
+
