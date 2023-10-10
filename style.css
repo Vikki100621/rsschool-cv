@@ -1,4 +1,4 @@
-/*Обнуление*/
+/* Обнуление */
 * {
   padding: 0;
   margin: 0;
@@ -6,8 +6,8 @@
 }
 
 *,
-*:before,
-*:after {
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -37,10 +37,9 @@ body {
   height: 100%;
   width: 100%;
   font-weight: 500;
-  line-height: 100%;
   font-size: 16px;
-  background-color: black;
-  font-family: "Montserrat", sans-serif;
+  background-color: #000000;
+  font-family: Montserrat, sans-serif;
   line-height: 170%;
   color: #c4bda9;
   scroll-behavior: smooth;
@@ -68,7 +67,7 @@ a:hover {
   text-decoration: none;
 }
 
-/*--------------------*/
+/* -------------------- */
 .wrapper {
   height: 100vh;
   display: flex;
@@ -79,11 +78,11 @@ a:hover {
   max-width: 1046px;
   margin: 0 auto;
   box-sizing: content-box;
-  padding: 0px 15px;
+  padding: 0 15px;
 }
 
-/*--------------------*/
-/*-----Header---------*/
+/* -------------------- */
+/* -----Header--------- */
 
 .header__container {
   position: relative;
@@ -108,7 +107,7 @@ a:hover {
 }
 
 .header__text {
-  padding: 130px 0px;
+  padding: 130px 0;
 }
 
 .header__text h1 {
@@ -121,20 +120,19 @@ a:hover {
 .header__text h2 {
   font-size: 24px;
   font-weight: 600;
-  padding: 30px 0px 0px 0px;
+  padding: 30px 0 0;
   color: #ded8ca;
 }
 
 .header__photo {
   position: absolute;
-  width: 100%;
   height: 100%;
   top: 0;
   right: 0;
   width: 350px;
 }
 
-@media (max-width: 762px) {
+@media (width <= 762px) {
   .header__photo {
     opacity: 0.6;
   }
@@ -154,7 +152,7 @@ a:hover {
   box-shadow: 10px 5px 5px black;
 }
 
-@media (max-width: 992px) {
+@media (width <= 992px) {
   .header__photo img {
   }
 }
@@ -168,21 +166,20 @@ a:hover {
 
 .navigaiton__menu {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 .nav-item:not(:last-child) {
-  padding: 0px 40px 0px 0px;
+  padding: 0 40px 0 0;
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .nav-item {
     flex: 0 1 100%;
   }
 
   .nav-item:not(:last-child) {
-    margin: 0px 0px 15px 0px;
+    margin: 0 0 15px;
   }
 }
 
@@ -193,11 +190,11 @@ a:hover {
 }
 
 .nav-link:hover {
-  color: rgb(143, 107, 9);
+  color: rgb(143 107 9);
 }
 
-/*--------------------*/
-/*-----Main---------*/
+/* -------------------- */
+/* -----Main--------- */
 
 .main {
   flex: 1 1 auto;
@@ -206,11 +203,12 @@ a:hover {
 .main__body {
   display: flex;
   flex-wrap: wrap;
-  margin: 100px 0px 100px 0px;
+  margin: 100px 0;
 }
-@media (max-width: 767px) {
+
+@media (width <= 767px) {
   .main__body {
-    margin: 30px 0px 30px 0px;
+    margin: 30px 0;
   }
 }
 
@@ -218,32 +216,32 @@ a:hover {
 }
 
 .main-block {
-  padding: 10px 0px;
+  padding: 10px 0;
   flex: 0 1 50%;
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .main-block {
-    padding: 10px 0px;
+    padding: 10px 0;
     flex: 0 1 100%;
   }
 }
 
 .main-block h3 {
-  margin: 40px 0px 20px 0px;
+  margin: 40px 0 20px;
   font-size: 24px;
   position: relative;
   color: #ded8ca;
 }
 
-@media (max-width: 767px) {
+@media (width <= 767px) {
   .main-block h3 {
-    margin: 20px 0px 20px 0px;
+    margin: 20px 0;
   }
 }
 
 .main-block h3::before {
-  content: "";
+  content: '';
   position: absolute;
   background: #c4bda9;
   left: 0;
@@ -269,10 +267,7 @@ a:hover {
 }
 
 .main-menu__item:not(:last-child) {
-  margin: 0px 0px 15px 0px;
-}
-
-.contact-adress {
+  margin: 0 0 15px;
 }
 
 .main-menu__img {
@@ -280,125 +275,86 @@ a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   width: 20px;
-
   height: 20px;
   margin-right: 20px;
 }
 
 .contact-img__adress {
-  background-image: url(images/contactcs/map.svg);
+  background-image: url('images/contactcs/map.svg');
 }
 
 .main-menu__link {
   color: inherit;
 }
 
-.contact-email {
-}
-
 .contact-img__email {
-  background-image: url(images/contactcs/email.svg);
+  background-image: url('images/contactcs/email.svg');
 }
 
 .contact-github {
 }
 
 .contact-img__github {
-  background-image: url(images/contactcs/github.svg);
-}
-
-.contact-telegram {
+  background-image: url('images/contactcs/github.svg');
 }
 
 .contact-img__telegram {
-  background-image: url(images/contactcs/telegram.svg);
-}
-
-.contact-discord {
+  background-image: url('images/contactcs/telegram.svg');
 }
 
 .contact-img__discord {
-  background-image: url(images/contactcs/discord-icon-svgrepo-com.svg);
+  background-image: url('images/contactcs/discord-icon-svgrepo-com.svg');
 }
 
 .menu-marker {
-  background-image: url(images/skills/галочка.svg);
+  background-image: url('images/skills/галочка.svg');
 }
 
-/*-------End Main-------------*/
-/*-------Footer-------*/
+/* -------End Main------------- */
+/* -------Footer------- */
 
 .footer-columns {
-   display: flex;
-   flex-wrap: wrap;
-   height: 100px;
-   justify-content: space-between;
-   align-items: center;
-}
-
-.footer-column img{
-height: 80px;
-width: 100px;
-}
-
-/* .footer-columns {
   display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.footer-column {
-  height: 100%;
-}
-
-.footer-columns .footer-column__rsschool {
-
-}
-
-.footer-columns .footer-column__text {
-  text-align: right;
-  margin-bottom: 80px;
-}
-
-.footer-column {
-  flex: 0 1 25%;
-  height: 50px;
-}
-
-@media (max-width: 767px) {
-  .footer-column {
-    flex: 0 1 100%;
-    text-align: left;
-  }
-
-  .footer-columns .footer-column__text {
-    text-align: left;
-  }
-
-  .footer-column:not(:last-child) {
-    margin: 0px 0px 20px 0px;
-  }
-}
-
-.footer-column__rsschool {
-}
-
-.footer__link {
-}
-
-.footer__link img {
-  width: 100px;
+.footer-column img {
   height: 80px;
-  padding: 10px 20px;
-  margin: 30px;
-  border: 5px solid #040;
+  width: 100px;
 }
 
-.footer-column__youtube {
+.cards-block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  height: min-content;
 }
 
-.footer-column__github {
+.card {
+  height: 120px;
+  width: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  box-shadow:
+    0 0 10px 0 #eae7e4 inset,
+    0 0 10px 4px #eae7e4;
+    transform: scale(1.05);
+}
+.card.minesweeper {
+  background-image: url('images/content/minesweeper.png');
 }
 
-.footer-column__text {
-  font-size: 12px;
+.card.selectors {
+  background-image: url('images/content/selectors.png');
 }
-*/
+.card.momentum {
+  background-image: url('images/content/momentum.png');
+}
