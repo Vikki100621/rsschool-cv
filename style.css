@@ -149,19 +149,12 @@ a:hover {
   right: 0;
   top: 0;
   border-radius: 9px;
-  box-shadow: 10px 5px 5px black;
-}
-
-@media (width <= 992px) {
-  .header__photo img {
-  }
+  box-shadow: 10px 5px 5px #000000;
 }
 
 .header__navigation ul {
   display: flex;
   flex-wrap: wrap;
-}
-.navigaition__navbar {
 }
 
 .navigaiton__menu {
@@ -212,9 +205,6 @@ a:hover {
   }
 }
 
-.main__contacts {
-}
-
 .main-block {
   padding: 10px 0;
   flex: 0 1 50%;
@@ -250,18 +240,6 @@ a:hover {
   height: 2px;
 }
 
-.main__contacts {
-}
-
-.main-block {
-}
-
-.main-block__menu {
-}
-
-.contacts-menu {
-}
-
 .main-menu__item {
   display: flex;
 }
@@ -289,9 +267,6 @@ a:hover {
 
 .contact-img__email {
   background-image: url('images/contactcs/email.svg');
-}
-
-.contact-github {
 }
 
 .contact-img__github {
@@ -355,6 +330,7 @@ a:hover {
 .card.selectors {
   background-image: url('images/content/selectors.png');
 }
+
 .card.momentum {
   background-image: url('images/content/momentum.png');
 }
